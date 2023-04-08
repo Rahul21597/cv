@@ -1,0 +1,27 @@
+body{
+    background:#f8f0f0;
+    margin: 0;
+    font-family: Arial;
+}
+header{
+    color: white;
+    font-family:georgia;
+    background: #000000;
+    text-align: center;
+    padding: 10px;
+}
+form,legend{
+   margin: 20px;
+   color: #0a0909;
+   
+}
+select#salutation,input#fparent,input#bday,input#mailid,input#gen1,input#gen2,input#gen3,textarea#address1,input#city,input#zip,select#cont{
+    margin: 20px;
+    margin-left:0;
+}
+input#fname,input#mparent,input#reset{
+    margin-left: 20px;
+}
+input#numb{
+    margin-left: 10px;
+}

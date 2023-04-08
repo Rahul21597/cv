@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyFirstForm</title>
+    <link rel="stylesheet" href="form.css">
+    <header><h2> Registration Form </h2></header>
+</head>
+
+
+<body>
+<fieldset>
+<legend>Personal Data:</legend>
+    <form action="mailto:thakurrahul696@gmail.com" enctype="text/plain" method="post">
+       
+    <!--for asking the full name of the user  -->
+    
+    <span>
+         <!--giving name as label  -->
+     <label for="name">Name:</label><br>
+
+      <!-- making a option of user to select their salutation-->  
+    <select name="salutation" id="salutation">
+        <option value=""disabled selected hidden>Title</option>    <!--for making a placeholder in list   -->
+
+        <option value="Mr">Mr.</option>
+        <option value="Mrs">Mrs.</option>
+        <option value="Miss">Miss.</option>
+    </select>
+
+     <!--now creating space for user to enter their full name-->
+<input type=" text" name="firstname" id="name" placeholder="First" >
+
+<input type="text" name="middlename" id="mname" placeholder="Middle">
+
+<input type="text" name="lastname" id="lname"  placeholder="Last" >
+
+   </span>
+<br>
+<br>
+   
+    <span>
+         <!--for fathers name   -->
+<label for="fparent" > Parentage:</label><br>
+<input type="text" name="fathersname" id="fparent" placeholder="Enter father name">
+
+ <!--for mothers name   -->
+<input type="text" name="mothersname" id="mparent" placeholder="Enter mother name"></span>
+    <br>
+<br>
+
+    <!--for date of birth  -->
+<div>
+    <label for="bday">Date-Of-Birth:</label><br>
+    <input type="date" name="dateofbirth" id="bday">
+</div>
+<br>
+
+    <!--for email address  -->
+<div>
+    <label for="mailid">Email:</label><br>
+     <input type="email" name="mail" id="mailid" placeholder="Email">
+</div>
+<br>
+
+    <!--for contact information  -->
+<Div>
+
+        <!--for giving option to select from mobile and telephone   -->
+    <label for="cont">Contact:</label><br>
+    <select name="contact" id="cont" >
+        <option value=""disabled selected hidden>Select</option>    <!--for making a placeholder in list   -->
+
+    <option value="mobile">Mobile</option>
+    <option value="telephone">Telephone</option> 
+</select>
+<select name="countrycode" id="countrycode">
+    <option value="india" selected>+91</option>
+    <option value="nepal">+977</option>
+    <option value="bhutan">+975</option>
+    <option value="myanmar">+95</option>
+
+</select>
+
+    <!--for asking phone number  -->
+<input type="telephone" id="numb" placeholder="Phone number">
+</Div><br>
+
+    <!--for asking to select a gender  -->
+<div>
+    <label for="gen">Gender:</label><br>
+    <input type="radio" name="gender" id="gen1">Male <br>
+    <input type="radio" name="gender" id="gen2">Female <br>
+    <input type="radio" name="gender" id="gen3">Prefer not to say
+</div><br>
+
+    <!--for asking the address   -->
+<label for="address">Address:</label>
+<div>
+<textarea name="address1" id="address1" rows="2" cols="60" placeholder="Street Address"></textarea><br><br>
+<textarea name="address2" id="address2" rows="2" cols="60" placeholder="Street address Line 2"></textarea><br><br>
+
+    <!--city   -->
+<input type="text" name="city" id="city" placeholder="City">
+
+    <!--region  -->
+<input type="text" name="region" id="region" placeholder="Region"><br><br>
+
+    <!--zipcode   -->
+<input type="text" name="zip" id="zip" placeholder="postal/Zip Code">
+
+    <!--select country  -->
+<select name="country" id="country">
+    <option value=""disabled selected hidden>Country</option>    <!--for making a placeholder in list   -->
+
+    <option value="india">India</option>
+    <option value="nepal">Nepal</option>
+    <option value="bhutan">Bhutan</option>
+    <option value="myanmar">Myanmar</option>
+</select>
+
+
+</div><br><br>
+
+    <!--creating submit and reset button  -->
+<div>
+    <input type="submit" value="Submit">
+    <input type="reset" value="Reset" id="reset">
+</div>
+</fieldset>
+</form>
+</body>
+</html>
